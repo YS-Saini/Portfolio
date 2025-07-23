@@ -4,6 +4,7 @@ import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import {greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import SocialMedia from "../../components/socialMedia/SocialMedia";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
@@ -19,6 +20,7 @@ export default function Greeting() {
         <p className={isDark ? "dark-mode greeting-text-p" : "greeting-text-p subTitle"}>
           {greeting.subTitle}
         </p>
+        <SocialMedia />
       </div>
     </section>
   );
