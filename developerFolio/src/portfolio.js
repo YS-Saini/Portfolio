@@ -36,7 +36,7 @@ const socialMediaLinks = {
   github: "https://github.com/YS-Saini",
   linkedin: "https://www.linkedin.com/in/yuvraj-singh-3aa067263/",
   gmail: "yssaini2004@gmail.com",
-  resume: "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/17qAupqXV03CVb6aSjgwRsh2GIpLoHmSb/view?usp=sharing",
   // gitlab: "https://gitlab.com/saadpasta",
   // facebook: "https://www.facebook.com/saad.pasta7",
   // medium: "https://medium.com/@saadpasta",
