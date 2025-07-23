@@ -44,6 +44,11 @@
   background-color: $gitlab;
 }
 
+.resume i {
+  background-color: $resume; // Use a variable for consistency
+  color: $textColorDark;
+}
+
 .google i {
   background-color: $google;
 }
