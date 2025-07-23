@@ -130,46 +130,52 @@
 }
 
 .landing-bg-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
   min-height: 100vh;
   width: 100vw;
   background: url('../../assets/images/My_bgphoto.jpeg') no-repeat center center fixed;
   background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
   position: relative;
 }
 .landing-bg-overlay {
-  background: rgba(0,0,0,0.2); /* dark overlay for text readability */
+  background: none !important;
+  box-shadow: none !important;
   padding: 3rem 2rem;
   border-radius: 16px;
-  text-align: left;
-  max-width: 700px;
-  margin-left: 5vw;
+  text-align: center;
 }
 .landing-bg-overlay.left-align {
+  margin-left: 5vw;
+  margin-top: 8vh;
   align-items: flex-start;
   text-align: left;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+}
+.landing-bg-overlay .greeting-text,
+.landing-bg-overlay .greeting-text-p {
+  color: #000 !important;
+  background: none !important;
+  box-shadow: none !important;
 }
 .landing-bg-overlay .greeting-text {
-  color: #fff !important;
   font-size: 4rem;
   margin-bottom: 1rem;
-  text-align: left;
 }
 .landing-bg-overlay .greeting-text-p {
-  color: #fff !important;
   font-size: 2rem;
-  text-align: left;
+  font-weight: bold;
+  color: #000 !important;
 }
 @media (max-width: 768px) {
-  .landing-bg-overlay {
-    padding: 1.5rem 1rem;
-    max-width: 95vw;
+  .landing-bg-section {
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .landing-bg-overlay.left-align {
     margin-left: 0;
+    margin-top: 2vh;
+    max-width: 95vw;
   }
   .landing-bg-overlay .greeting-text {
     font-size: 2rem;
