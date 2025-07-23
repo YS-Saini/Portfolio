@@ -5,6 +5,9 @@
   padding: 20px 10px;
   margin: 0px auto;
   margin-top: 4rem;
+  // min-height: 100vh;
+  // background: url('../../assets/images/My_bgphoto.jpeg') no-repeat center center fixed;
+  // background-size: cover;
 }
 .greet-main {
   width: 90%;
@@ -123,5 +126,55 @@
 @media (max-width: 320px) {
   .main {
     width: auto;
+  }
+}
+
+.landing-bg-section {
+  min-height: 100vh;
+  width: 100vw;
+  background: url('../../assets/images/My_bgphoto.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+.landing-bg-overlay {
+  background: rgba(0,0,0,0.4); /* dark overlay for text readability */
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  text-align: left;
+  max-width: 700px;
+  margin-left: 5vw;
+}
+.landing-bg-overlay.left-align {
+  align-items: flex-start;
+  text-align: left;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.landing-bg-overlay .greeting-text {
+  color: #fff !important;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.landing-bg-overlay .greeting-text-p {
+  color: #fff !important;
+  font-size: 2rem;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .landing-bg-overlay {
+    padding: 1.5rem 1rem;
+    max-width: 95vw;
+    margin-left: 0;
+  }
+  .landing-bg-overlay .greeting-text {
+    font-size: 2rem;
+  }
+  .landing-bg-overlay .greeting-text-p {
+    font-size: 1rem;
   }
 }
